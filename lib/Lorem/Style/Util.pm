@@ -1,4 +1,7 @@
 package Lorem::Style::Util;
+{
+  $Lorem::Style::Util::VERSION = '0.200';
+}
 use strict;
 use warnings;
 use Carp 'confess';
@@ -14,7 +17,7 @@ sub parse_style {
     my @pairs = split /;/, $input;
     
     for ( @pairs ) {
-        next if /^\s+$/; 
+        next if /^\s*$/; 
         my ( $attr, $value ) = split /:/, $_;
         $attr =~ s/-/_/g;
         $_ =~ s/^\s*//g for $attr, $value;
@@ -22,6 +25,7 @@ sub parse_style {
         $parsed{ $attr } = $value;
     }
     
+   
     return \%parsed;
 }
 

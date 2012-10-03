@@ -1,4 +1,7 @@
 package Lorem::Surface::PrintOperation;
+{
+  $Lorem::Surface::PrintOperation::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

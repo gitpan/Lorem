@@ -1,5 +1,10 @@
 package Lorem::Role::HasSizeAllocation;
+{
+  $Lorem::Role::HasSizeAllocation::VERSION = '0.200';
+}
+
 use Moose::Role;
+use MooseX::SemiAffordanceAccessor;
 
 has 'size_allocation' => (
     is => 'rw',

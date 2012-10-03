@@ -1,4 +1,7 @@
 package Lorem::Element::Header;
+{
+  $Lorem::Element::Header::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

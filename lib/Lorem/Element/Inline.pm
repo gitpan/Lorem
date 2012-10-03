@@ -1,4 +1,7 @@
 package Lorem::Element::Inline;
+{
+  $Lorem::Element::Inline::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

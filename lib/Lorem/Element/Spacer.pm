@@ -1,4 +1,7 @@
 package Lorem::Element::Spacer;
+{
+  $Lorem::Element::Spacer::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

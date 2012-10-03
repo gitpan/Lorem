@@ -1,6 +1,10 @@
 package Lorem::Role::Style::HasMargin;
+{
+  $Lorem::Role::Style::HasMargin::VERSION = '0.200';
+}
 
 use Moose::Role;
+use MooseX::SemiAffordanceAccessor;
 
 use Lorem::Style::Util qw( parse_margin );
 use Lorem::Types qw( LoremStyleLength );

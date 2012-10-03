@@ -1,7 +1,11 @@
 package Lorem::Role::HasHeaderFooter;
+{
+  $Lorem::Role::HasHeaderFooter::VERSION = '0.200';
+}
 use Moose::Role;
 
 use Lorem::Types qw( MaybeLoremDoesStamp );
+use MooseX::SemiAffordanceAccessor;
 
 has 'header' => (
     is => 'rw',

@@ -1,6 +1,10 @@
 package Lorem::Role::Style::HasDimensions;
+{
+  $Lorem::Role::Style::HasDimensions::VERSION = '0.200';
+}
 
 use Moose::Role;
+use MooseX::SemiAffordanceAccessor;
 
 use Lorem::Types qw( LoremStyleDimension );
 use MooseX::Types::Moose qw( Undef );

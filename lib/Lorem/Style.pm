@@ -1,4 +1,7 @@
 package Lorem::Style;
+{
+  $Lorem::Style::VERSION = '0.200';
+}
 use Moose;
 use MooseX::SemiAffordanceAccessor;
 use MooseX::StrictConstructor;
@@ -18,7 +21,7 @@ use Lorem::Types qw( LoremElement LoremStyle LoremStyleVerticalAlign );
 
 has 'color' => (
     is => 'rw',
-    traits  => [qw/Inherit/],
+    traits  => [qw(Inherit)],
 );
 
 has 'vertical_align' => (

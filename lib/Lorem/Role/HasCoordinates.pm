@@ -1,5 +1,10 @@
 package Lorem::Role::HasCoordinates;
+{
+  $Lorem::Role::HasCoordinates::VERSION = '0.200';
+}
+
 use Moose::Role;
+use MooseX::SemiAffordanceAccessor;
 
 has 'x' => (
     is => 'rw',

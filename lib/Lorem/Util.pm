@@ -1,11 +1,14 @@
 package Lorem::Util;
+{
+  $Lorem::Util::VERSION = '0.200';
+}
 use strict;
 use warnings;
 use Carp 'confess';
 
 require Exporter;
 our @ISA = qw(Exporter);
-our @EXPORT_OK = qw(in2pt pt2in escape_ampersand percent_of);
+our @EXPORT_OK = qw(in2pt pt2in escape_ampersand percent_of escape_entities escape_entity);
 
 sub in2pt {
     my $inches = shift;
@@ -27,6 +30,23 @@ sub percent_of {
 }
 
 sub escape_ampersand {
+    my $string = shift;
+    confess 'usage is escape_ampersand( $string )' if ! defined $string;
+    $string =~ s/&/&amp;/g;
+    return $string;
+}
+
+sub escape_entity {
+    my $string = shift;
+    
+    warn 'Lore::Util::escape_entity is deprecated, use Lorem::Util::escape_entities instead';
+    
+    confess 'usage is escape_ampersand( $string )' if ! defined $string;
+    $string =~ s/&/&amp;/g;
+    return $string;
+}
+
+sub escape_entities {
     my $string = shift;
     confess 'usage is escape_ampersand( $string )' if ! defined $string;
     $string =~ s/&/&amp;/g;

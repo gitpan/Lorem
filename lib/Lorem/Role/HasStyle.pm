@@ -1,6 +1,11 @@
 package Lorem::Role::HasStyle;
+{
+  $Lorem::Role::HasStyle::VERSION = '0.200';
+}
+
 use Moose::Role;
 use MooseX::Clone;
+use MooseX::SemiAffordanceAccessor;
 
 use Lorem::Types qw( LoremStyle );
 use Lorem::Style;

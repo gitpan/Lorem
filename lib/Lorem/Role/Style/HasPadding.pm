@@ -1,6 +1,10 @@
 package Lorem::Role::Style::HasPadding;
+{
+  $Lorem::Role::Style::HasPadding::VERSION = '0.200';
+}
 
 use Moose::Role;
+use MooseX::SemiAffordanceAccessor;
 
 use Lorem::Style::Util qw( parse_padding );
 use Lorem::Types qw( LoremStyleLength );

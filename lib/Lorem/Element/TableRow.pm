@@ -1,4 +1,7 @@
 package Lorem::Element::TableRow;
+{
+  $Lorem::Element::TableRow::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

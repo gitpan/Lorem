@@ -1,6 +1,7 @@
 package Lorem::Document;
-our $VERSION = '0.01';
-
+{
+  $Lorem::Document::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;
@@ -63,6 +64,10 @@ has 'builder_func' => (
     writer => 'build',
     reader => 'builder_func',
 );
+
+sub current_page {
+    $_[0]->children->[-1];
+}
 
 sub doc { $_[0] }
 

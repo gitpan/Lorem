@@ -1,6 +1,10 @@
 package Lorem::Role::Style::HasBorders;
+{
+  $Lorem::Role::Style::HasBorders::VERSION = '0.200';
+}
 
 use Moose::Role;
+use MooseX::SemiAffordanceAccessor;
 
 use Lorem::Style::Util qw( parse_border );
 

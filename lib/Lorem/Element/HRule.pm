@@ -1,4 +1,7 @@
 package Lorem::Element::HRule;
+{
+  $Lorem::Element::HRule::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

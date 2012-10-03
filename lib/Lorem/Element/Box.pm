@@ -1,4 +1,7 @@
 package Lorem::Element::Box;
+{
+  $Lorem::Element::Box::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

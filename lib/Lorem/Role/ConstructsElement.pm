@@ -1,6 +1,10 @@
 package Lorem::Role::ConstructsElement;
+{
+  $Lorem::Role::ConstructsElement::VERSION = '0.200';
+}
 
 use MooseX::Role::Parameterized;
+use MooseX::SemiAffordanceAccessor;
 
 parameter name => (
     isa      => 'Str',

@@ -1,4 +1,7 @@
 package Lorem::Surface::Pdf;
+{
+  $Lorem::Surface::Pdf::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

@@ -1,4 +1,7 @@
 package Lorem::Surface;
+{
+  $Lorem::Surface::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;

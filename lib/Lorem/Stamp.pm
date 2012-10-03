@@ -1,4 +1,7 @@
 package Lorem::Stamp;
+{
+  $Lorem::Stamp::VERSION = '0.200';
+}
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;
