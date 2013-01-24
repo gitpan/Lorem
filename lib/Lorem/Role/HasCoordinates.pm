@@ -1,6 +1,6 @@
 package Lorem::Role::HasCoordinates;
 {
-  $Lorem::Role::HasCoordinates::VERSION = '0.21';
+  $Lorem::Role::HasCoordinates::VERSION = '0.22';
 }
 
 use Moose::Role;

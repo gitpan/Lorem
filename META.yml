@@ -23,4 +23,4 @@ requires:
   Pango: 0
   Readonly: 0
   TryCatch: 0
-version: 0.21
+version: 0.22

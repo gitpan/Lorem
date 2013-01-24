@@ -1,6 +1,6 @@
 package Lorem::Element::TableRow;
 {
-  $Lorem::Element::TableRow::VERSION = '0.21';
+  $Lorem::Element::TableRow::VERSION = '0.22';
 }
 
 use Moose;

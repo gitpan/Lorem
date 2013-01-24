@@ -1,6 +1,6 @@
 package Lorem::Role::HasSizeAllocation;
 {
-  $Lorem::Role::HasSizeAllocation::VERSION = '0.21';
+  $Lorem::Role::HasSizeAllocation::VERSION = '0.22';
 }
 
 use Moose::Role;

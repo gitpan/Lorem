@@ -1,6 +1,6 @@
 package Lorem;
 {
-  $Lorem::VERSION = '0.21';
+  $Lorem::VERSION = '0.22';
 }
 
 our $AUTHORITY = 'cpan:JHALLOCK';

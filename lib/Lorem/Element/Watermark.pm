@@ -1,6 +1,6 @@
 package Lorem::Element::Watermark;
 {
-  $Lorem::Element::Watermark::VERSION = '0.21';
+  $Lorem::Element::Watermark::VERSION = '0.22';
 }
 
 use Moose;

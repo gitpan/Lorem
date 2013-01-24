@@ -1,6 +1,6 @@
 package Lorem::Style;
 {
-  $Lorem::Style::VERSION = '0.21';
+  $Lorem::Style::VERSION = '0.22';
 }
 use Moose;
 use MooseX::SemiAffordanceAccessor;

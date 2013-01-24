@@ -1,6 +1,6 @@
 package Lorem::Element::Header;
 {
-  $Lorem::Element::Header::VERSION = '0.21';
+  $Lorem::Element::Header::VERSION = '0.22';
 }
 
 use Moose;

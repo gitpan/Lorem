@@ -4,7 +4,6 @@ Lorem.komodoproject
 MANIFEST
 META.yml
 Makefile.PL
-Package.PL
 README
 dist.ini
 examples/sudoku.pl

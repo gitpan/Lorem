@@ -1,6 +1,6 @@
 package Lorem::Surface::Pdf;
 {
-  $Lorem::Surface::Pdf::VERSION = '0.21';
+  $Lorem::Surface::Pdf::VERSION = '0.22';
 }
 
 use Moose;

@@ -1,6 +1,6 @@
 package Lorem::Util;
 {
-  $Lorem::Util::VERSION = '0.21';
+  $Lorem::Util::VERSION = '0.22';
 }
 use strict;
 use warnings;

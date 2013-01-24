@@ -1,5 +1,7 @@
 Revision history for perl module Lorem
 
+0.22      2013-01-24 15:08:47
+
 0.21      2013-01-24 13:48:34
 - build function works with pdf
 - added dependcies to dist.ini

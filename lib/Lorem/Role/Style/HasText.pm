@@ -1,6 +1,6 @@
 package Lorem::Role::Style::HasText;
 {
-  $Lorem::Role::Style::HasText::VERSION = '0.21';
+  $Lorem::Role::Style::HasText::VERSION = '0.22';
 }
 
 use Moose::Role;
