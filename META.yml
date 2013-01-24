@@ -1,5 +1,5 @@
 ---
-abstract: "Cross-platform document renderer\r"
+abstract: "Document creation\r"
 author:
   - 'Jeffrey Ray Hallock <jeffrey.hallock@gmail.com>'
 build_requires: {}
@@ -16,9 +16,11 @@ requires:
   Cairo: 0
   Moose: 0
   MooseX::Clone: 0
+  MooseX::Role::Parameterized: 0
   MooseX::SemiAffordanceAccessor: 0
   MooseX::StrictConstructor: 0
   MooseX::Types: 0
   Pango: 0
   Readonly: 0
-version: 0.200
+  TryCatch: 0
+version: 0.21

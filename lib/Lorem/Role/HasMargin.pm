@@ -1,6 +1,6 @@
 package Lorem::Role::HasMargin;
 {
-  $Lorem::Role::HasMargin::VERSION = '0.200';
+  $Lorem::Role::HasMargin::VERSION = '0.21';
 }
 
 use Moose::Role;

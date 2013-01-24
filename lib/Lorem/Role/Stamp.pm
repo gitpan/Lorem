@@ -1,6 +1,6 @@
 package Lorem::Role::Stamp;
 {
-  $Lorem::Role::Stamp::VERSION = '0.200';
+  $Lorem::Role::Stamp::VERSION = '0.21';
 }
 
 use Moose::Role;

@@ -1,14 +1,12 @@
 package Lorem::Surface::Pdf;
 {
-  $Lorem::Surface::Pdf::VERSION = '0.200';
+  $Lorem::Surface::Pdf::VERSION = '0.21';
 }
 
 use Moose;
 use MooseX::SemiAffordanceAccessor;
 use MooseX::StrictConstructor;
 extends 'Lorem::Surface';
-
-use Gtk2;
 
 has 'width' => (
     is => 'rw',
@@ -35,7 +33,7 @@ sub print {
     $doc->set_height( $self->height );
     my $cr = Cairo::Context->create( $surface );
 
-    #&{$doc->builder_func}( $doc, $cr );
+    &{$doc->builder_func}( $doc, $cr ) if $doc->builder_func;
     
     my @pages = @{$doc->children};
 

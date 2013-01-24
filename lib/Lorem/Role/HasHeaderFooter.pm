@@ -1,6 +1,6 @@
 package Lorem::Role::HasHeaderFooter;
 {
-  $Lorem::Role::HasHeaderFooter::VERSION = '0.200';
+  $Lorem::Role::HasHeaderFooter::VERSION = '0.21';
 }
 use Moose::Role;
 

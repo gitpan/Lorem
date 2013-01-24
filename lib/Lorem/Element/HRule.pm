@@ -1,6 +1,6 @@
 package Lorem::Element::HRule;
 {
-  $Lorem::Element::HRule::VERSION = '0.200';
+  $Lorem::Element::HRule::VERSION = '0.21';
 }
 
 use Moose;

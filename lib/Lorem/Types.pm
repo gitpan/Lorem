@@ -1,6 +1,6 @@
 package Lorem::Types;
 {
-  $Lorem::Types::VERSION = '0.200';
+  $Lorem::Types::VERSION = '0.21';
 }
 
 use MooseX::Types
@@ -8,6 +8,7 @@ use MooseX::Types
 LoremAttrTextAlign
 LoremElement
 LoremText
+LoremWatermark
 LoremDoesStamp
 MaybeLoremDoesStamp
 LoremDocumentObject
@@ -52,6 +53,13 @@ class_type LoremText,
 coerce LoremText,
     from Str,
     via {  Lorem::Element::Text->new( content => $_ ) };
+    
+class_type LoremWatermark,
+    { class => 'Lorem::Element::Watermark' };
+
+coerce LoremWatermark,
+    from LoremElement,
+    via {  Lorem::Element::Watermark->new( content => $_ ) };
     
 # element attributes
 subtype LoremAttrTextAlign,

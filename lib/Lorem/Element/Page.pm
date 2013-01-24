@@ -1,6 +1,6 @@
 package Lorem::Element::Page;
 {
-  $Lorem::Element::Page::VERSION = '0.200';
+  $Lorem::Element::Page::VERSION = '0.21';
 }
 
 use Moose;
@@ -12,8 +12,11 @@ use Cairo;
 use Pango;
 
 use Lorem::Element::TableRow;
+
+
 extends 'Lorem::Element::Box';
 with 'Lorem::Role::HasHeaderFooter';
+with 'Lorem::Role::HasWatermark';
 with 'Lorem::Role::ConstructsElement' => { class => 'Lorem::Element::Div'  };
 with 'Lorem::Role::ConstructsElement' => { class => 'Lorem::Element::Spacer'  };
 with 'Lorem::Role::ConstructsElement' => { class => 'Lorem::Element::Text'  };
@@ -23,6 +26,8 @@ with 'Lorem::Role::ConstructsElement' => {
     class => 'Lorem::Element::HRule',
 };
 
+
+
 sub imprint {
     my ( $self, $cr ) = @_;
     
@@ -31,6 +36,7 @@ sub imprint {
     
     $self->size_request( $cr );
     $self->size_allocate( $cr, 0, 0, $self->parent->width, $self->parent->height );
+    $self->_imprint_watermark( $cr );
     $self->_imprint_borders ( $cr );
     
     if ( $self->header ) {
@@ -41,6 +47,8 @@ sub imprint {
     $_->imprint( $cr ) for ( @{ $self->children } );
     
 }
+
+
 
 
 

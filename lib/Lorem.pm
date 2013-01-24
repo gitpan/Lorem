@@ -1,7 +1,9 @@
 package Lorem;
 {
-  $Lorem::VERSION = '0.200';
+  $Lorem::VERSION = '0.21';
 }
+
+our $AUTHORITY = 'cpan:JHALLOCK';
 
 use Lorem::Document;
 use Lorem::Surface::Pdf;
@@ -23,7 +25,7 @@ __END__
 
 =head1 NAME
 
-Lorem - Cross-platform document renderer
+Lorem - Document creation
 
 =head1 SYNOPSIS
 
@@ -34,12 +36,10 @@ Lorem - Cross-platform document renderer
   $doc = Lorem->new_document;
 
   $doc->new_header( center => 'Lorem Document' );
-  
-  $doc->new_page( style => 'align: center' );
-  
-  $page->new_text( content => 'Lorem Ipsum' );
-  
+
+
   # save to pdf file
+
   $pdf = Lorem::Surface::Pdf->new (
 
     file_name => 'output.pdf',
@@ -49,7 +49,7 @@ Lorem - Cross-platform document renderer
     height => in2pt( 11 ),
 
   );
-  
+
   $pdf->print( $doc );
 
   # send to printer
@@ -64,9 +64,7 @@ Lorem - Cross-platform document renderer
 
 =head1 DESCRIPTION
 
-Lorem is a library for creating printable reports. Lorem is a layer over the
-Pango/Cairo/Gtk2 Perl bindings that provides support for headers, margins,
-tables and other document elements.
+L<Lorem> is a library for creating/displaying/printing documents.
 
 =head1 ALPHA VERSION
 
@@ -89,28 +87,22 @@ Returns a new L<Lorem::Document> object.
 
 =item L<Cairo>
 
-=item L<Gtk2>
+=item L<Glib>
 
-=item L<Pango>
+=item L<Gtk2>
 
 =back
 
-=head1 SUPPORT
+=head1 AUTHOR
 
 Jeffrey Ray Hallock E<lt>jeffrey.hallock at gmail dot comE<gt>
 
-=head1 AUTHORS
+=head1 COPYRIGHT
 
-Jeffrey Ray Hallock E<lt>jeffrey.hallock at gmail dot comE<gt>
+This software is Copyright (c) 2010-2012 Jeffrey Ray Hallock.
 
-=head1 COPYRIGHT & LICENSE
+This is free software, licensed under:
 
-Copyright (c) 2010-2012 Jeffrey Ray Hallock.
-    
-    This is free software, licensed under:
-
-    The Artistic License 2.0 (GPL Compatible)
-
-=cut
+   The Artistic License 2.0 (GPL Compatible)
 
 

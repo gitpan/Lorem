@@ -1,6 +1,6 @@
 package Lorem::Constants;
 {
-  $Lorem::Constants::VERSION = '0.200';
+  $Lorem::Constants::VERSION = '0.21';
 }
 use strict;
 use warnings;

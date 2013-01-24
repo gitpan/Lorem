@@ -4,6 +4,7 @@ Lorem.komodoproject
 MANIFEST
 META.yml
 Makefile.PL
+Package.PL
 README
 dist.ini
 examples/sudoku.pl
@@ -22,6 +23,8 @@ lib/Lorem/Element/Table.pm
 lib/Lorem/Element/TableCell.pm
 lib/Lorem/Element/TableRow.pm
 lib/Lorem/Element/Text.pm
+lib/Lorem/Element/Watermark.pm
+lib/Lorem/Element/sdfasdf.pm
 lib/Lorem/Meta/Attribute/Trait/Inherit.pm
 lib/Lorem/Role/ConstructsElement.pm
 lib/Lorem/Role/HasBorders.pm
@@ -32,6 +35,7 @@ lib/Lorem/Role/HasMargin.pm
 lib/Lorem/Role/HasPadding.pm
 lib/Lorem/Role/HasSizeAllocation.pm
 lib/Lorem/Role/HasStyle.pm
+lib/Lorem/Role/HasWatermark.pm
 lib/Lorem/Role/Stamp.pm
 lib/Lorem/Role/Style/HasBorders.pm
 lib/Lorem/Role/Style/HasDimensions.pm

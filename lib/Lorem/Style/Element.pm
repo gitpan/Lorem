@@ -1,6 +1,6 @@
 package Lorem::Style::Element;
 {
-  $Lorem::Style::Element::VERSION = '0.200';
+  $Lorem::Style::Element::VERSION = '0.21';
 }
 
 use Moose;

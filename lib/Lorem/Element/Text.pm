@@ -1,6 +1,6 @@
 package Lorem::Element::Text;
 {
-  $Lorem::Element::Text::VERSION = '0.200';
+  $Lorem::Element::Text::VERSION = '0.21';
 }
 
 use Moose;
@@ -118,6 +118,10 @@ sub size_allocate {
         if ( $self->parent->merged_style->vertical_align && $self->parent->merged_style->vertical_align eq 'middle' && $pheight > $height ) {
             my $delta = $pheight - $height;
             $y += $delta / 2 ;
+        }
+        if ( $self->parent->merged_style->vertical_align && $self->parent->merged_style->vertical_align eq 'bottom' && $pheight > $height ) {
+            my $delta = $pheight - $height;
+            $y += $delta;
         }
     }
     

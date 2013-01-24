@@ -1,6 +1,6 @@
 package Lorem::Document;
 {
-  $Lorem::Document::VERSION = '0.200';
+  $Lorem::Document::VERSION = '0.21';
 }
 
 use Moose;
@@ -26,6 +26,7 @@ use Lorem::Util;
 
 extends 'Lorem::Element::Box';
 with 'Lorem::Role::HasHeaderFooter';
+with 'Lorem::Role::HasWatermark';
 
 with 'Lorem::Role::ConstructsElement' => { 
     name => 'header',
@@ -49,6 +50,7 @@ with 'Lorem::Role::ConstructsElement' => {
         $new->set_header_margin( $self->header_margin );
         $new->set_footer_margin( $self->footer_margin );
         $new->set_header( $self->header->clone ) if $self->header;
+        $new->set_watermark( $self->watermark->clone ) if $self->watermark;
         $self->append_element( $new );
         return $new;
     }

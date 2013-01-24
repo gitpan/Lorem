@@ -4,8 +4,6 @@ use strict;
 
 use Test::More qw(no_plan);
 
-use Gtk2 '-init';
-
 use_ok('Lorem');
 use Lorem::Util qw( in2pt pt2in );
 

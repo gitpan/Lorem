@@ -1,6 +1,6 @@
 package Lorem::Element;
 {
-  $Lorem::Element::VERSION = '0.200';
+  $Lorem::Element::VERSION = '0.21';
 }
 
 use Moose;
@@ -47,6 +47,12 @@ has 'children' => (
         '_add_child' => 'push',
         'pop_child' => 'pop',
     }
+);
+
+has 'name' => (
+    is => 'rw',
+    isa => 'Str',
+    default => '',
 );
 
 sub append_element {

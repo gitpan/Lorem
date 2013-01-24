@@ -1,6 +1,6 @@
 package Lorem::Role::Style::HasPadding;
 {
-  $Lorem::Role::Style::HasPadding::VERSION = '0.200';
+  $Lorem::Role::Style::HasPadding::VERSION = '0.21';
 }
 
 use Moose::Role;
