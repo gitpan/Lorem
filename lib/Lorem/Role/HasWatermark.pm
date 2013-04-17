@@ -1,6 +1,6 @@
 package Lorem::Role::HasWatermark;
 {
-  $Lorem::Role::HasWatermark::VERSION = '0.22';
+  $Lorem::Role::HasWatermark::VERSION = '0.23.1';
 }
 
 use Moose::Role;

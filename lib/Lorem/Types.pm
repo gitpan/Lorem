@@ -1,6 +1,6 @@
 package Lorem::Types;
 {
-  $Lorem::Types::VERSION = '0.22';
+  $Lorem::Types::VERSION = '0.23.1';
 }
 
 use MooseX::Types

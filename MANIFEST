@@ -46,7 +46,6 @@ lib/Lorem/Style.pm
 lib/Lorem/Style/Element.pm
 lib/Lorem/Style/Element/Border.pm
 lib/Lorem/Style/Util.pm
-lib/Lorem/Styles.pod
 lib/Lorem/Surface.pm
 lib/Lorem/Surface/Pdf.pm
 lib/Lorem/Surface/PrintOperation.pm

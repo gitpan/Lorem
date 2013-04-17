@@ -1,6 +1,6 @@
 package Lorem::Role::HasBorders;
 {
-  $Lorem::Role::HasBorders::VERSION = '0.22';
+  $Lorem::Role::HasBorders::VERSION = '0.23.1';
 }
 
 use Moose::Role;

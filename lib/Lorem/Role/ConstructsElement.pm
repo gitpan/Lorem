@@ -1,6 +1,6 @@
 package Lorem::Role::ConstructsElement;
 {
-  $Lorem::Role::ConstructsElement::VERSION = '0.22';
+  $Lorem::Role::ConstructsElement::VERSION = '0.23.1';
 }
 
 use MooseX::Role::Parameterized;

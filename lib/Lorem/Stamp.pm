@@ -1,6 +1,6 @@
 package Lorem::Stamp;
 {
-  $Lorem::Stamp::VERSION = '0.22';
+  $Lorem::Stamp::VERSION = '0.23.1';
 }
 
 use Moose;

@@ -1,6 +1,6 @@
 package Lorem::Role::Style::HasDimensions;
 {
-  $Lorem::Role::Style::HasDimensions::VERSION = '0.22';
+  $Lorem::Role::Style::HasDimensions::VERSION = '0.23.1';
 }
 
 use Moose::Role;

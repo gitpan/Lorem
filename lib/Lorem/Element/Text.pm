@@ -1,6 +1,6 @@
 package Lorem::Element::Text;
 {
-  $Lorem::Element::Text::VERSION = '0.22';
+  $Lorem::Element::Text::VERSION = '0.23.1';
 }
 
 use Moose;
@@ -57,7 +57,7 @@ sub _build__layout {
     $layout->set_text( $text );
     
     # apply style (with additional attributes from markup)
-    $self->_apply_style_to_layout( $newatts ); # must happen before parsing markup
+    $self->_apply_style_to_layout( $newatts ); # must happen before parsing mark <- ???
     
     return $layout;
 }
@@ -146,6 +146,8 @@ sub _apply_style_to_layout  {
         my $val = $att_iter->next;
         last if ! $val;
     }
+    
+    $layout->set_font_description( $style->font_description );
     
     $layout->set_attributes( $attr_list );
     $layout->set_alignment( $style->text_align ) if $style->text_align;

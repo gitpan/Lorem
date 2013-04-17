@@ -1,6 +1,6 @@
 package Lorem::Element::Page;
 {
-  $Lorem::Element::Page::VERSION = '0.22';
+  $Lorem::Element::Page::VERSION = '0.23.1';
 }
 
 use Moose;
@@ -40,6 +40,7 @@ sub imprint {
     $self->_imprint_borders ( $cr );
     
     if ( $self->header ) {
+        $self->header->size_request( $cr );
         $self->header->size_allocate( $cr, 0, 0, $self->parent->width, $self->parent->height );
         $self->header->imprint( $cr ) if $self->header;
     }

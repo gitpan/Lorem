@@ -1,6 +1,6 @@
 package Lorem::Role::Style::HasText;
 {
-  $Lorem::Role::Style::HasText::VERSION = '0.22';
+  $Lorem::Role::Style::HasText::VERSION = '0.23.1';
 }
 
 use Moose::Role;
@@ -66,14 +66,7 @@ sub attr_list {
     my $list = Pango::AttrList->new;
     #$list->insert( Pango::Color->parse( $self->color ) );
     
-    my $fd = Pango::FontDescription->new();
-    $fd->set_size( $self->font_size * Pango->scale ) if $self->font_size;
-    $fd->set_family( $self->font_family ) if $self->font_family;
-    $fd->set_weight( $self->font_weight ) if $self->font_weight;
-    $fd->set_variant( $self->font_variant ) if $self->font_variant;
-    $fd->set_style( $self->font_style ) if $self->font_style;
-    
-    my $attr = Pango::AttrFontDesc->new( $fd );
+    my $attr = Pango::AttrFontDesc->new( $self->font_description );
     $list->insert( $attr );
     
     $attr = Pango::AttrUnderline->new( $self->text_underline ) if $self->text_underline;
@@ -85,6 +78,21 @@ sub attr_list {
     return $list;
 }
 
+
+
+# this is the server fix
+sub font_description {
+    my ( $self ) = @_;
+    
+    my $fd = Pango::FontDescription->new();
+    $fd->set_size( $self->font_size * Pango->scale ) if $self->font_size;
+    $fd->set_family( $self->font_family ) if $self->font_family;
+    $fd->set_weight( $self->font_weight ) if $self->font_weight;
+    $fd->set_variant( $self->font_variant ) if $self->font_variant;
+    $fd->set_style( $self->font_style ) if $self->font_style;
+    
+    return $fd;
+}
 
 
 

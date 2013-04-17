@@ -1,6 +1,6 @@
 package Lorem::Element;
 {
-  $Lorem::Element::VERSION = '0.22';
+  $Lorem::Element::VERSION = '0.23.1';
 }
 
 use Moose;
@@ -54,6 +54,8 @@ has 'name' => (
     isa => 'Str',
     default => '',
 );
+
+sub add { shift->append_element( @_ )  }
 
 sub append_element {
     my ( $self, @elements ) = @_;

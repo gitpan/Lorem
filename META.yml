@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300024, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -14,6 +14,7 @@ meta-spec:
 name: Lorem
 requires:
   Cairo: 0
+  Convert::Color: 0
   Moose: 0
   MooseX::Clone: 0
   MooseX::Role::Parameterized: 0
@@ -23,4 +24,4 @@ requires:
   Pango: 0
   Readonly: 0
   TryCatch: 0
-version: 0.22
+version: 0.23.1

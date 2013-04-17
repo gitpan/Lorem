@@ -1,6 +1,6 @@
 package Lorem::Document;
 {
-  $Lorem::Document::VERSION = '0.22';
+  $Lorem::Document::VERSION = '0.23.1';
 }
 
 use Moose;

@@ -1,6 +1,6 @@
 package Lorem::Style::Element::Border;
 {
-  $Lorem::Style::Element::Border::VERSION = '0.22';
+  $Lorem::Style::Element::Border::VERSION = '0.23.1';
 }
 
 use Moose;

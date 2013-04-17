@@ -1,6 +1,6 @@
 package Lorem::Element::Spacer;
 {
-  $Lorem::Element::Spacer::VERSION = '0.22';
+  $Lorem::Element::Spacer::VERSION = '0.23.1';
 }
 
 use Moose;

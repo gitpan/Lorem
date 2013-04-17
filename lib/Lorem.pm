@@ -1,14 +1,13 @@
 package Lorem;
 {
-  $Lorem::VERSION = '0.22';
+  $Lorem::VERSION = '0.23.1';
 }
 
 our $AUTHORITY = 'cpan:JHALLOCK';
 
 use Lorem::Document;
+use Lorem::Meta::Attribute::Trait::Inherit;
 use Lorem::Surface::Pdf;
-use Lorem::Surface::PrintOperation;
-
 
 sub new_document {
     Lorem::Document->new;

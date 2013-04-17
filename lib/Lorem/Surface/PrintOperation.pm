@@ -1,6 +1,6 @@
 package Lorem::Surface::PrintOperation;
 {
-  $Lorem::Surface::PrintOperation::VERSION = '0.22';
+  $Lorem::Surface::PrintOperation::VERSION = '0.23.1';
 }
 
 use Moose;
